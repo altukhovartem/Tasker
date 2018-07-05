@@ -8,11 +8,9 @@ namespace Tasker
 {
 	class CommandControl
 	{
-		
-
 		public CommandControl(string inputString)
 		{
-				
+					
 		}
 	}
 }

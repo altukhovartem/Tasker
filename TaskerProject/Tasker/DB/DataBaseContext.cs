@@ -17,17 +17,6 @@ namespace Tasker
 		public DbSet<TaskClass> TaskSet { get; set; }
 	}
 
-	public static class TaskAction
-	{
-		static readonly DataBaseContext db = new DataBaseContext();
-		
-		public static void Add(TaskClass currentTaskClass)
-		{
-			if (currentTaskClass == null)
-				throw new Exception("You are tring to add Task that is null");
-			db.TaskSet.Add(currentTaskClass);
-			db.SaveChanges();
-		}
-	}
+
 
 }
