@@ -21,6 +21,18 @@ namespace Tasker
 			}
 		}
 
+		public void AddRange(TaskClass currentTaskClass)
+		{
+			using (db = new DataBaseContext())
+			{
+				if (currentTaskClass == null)
+					throw new Exception("You are tring to add Task that is null");
+				db.TaskSet.Add(currentTaskClass);
+				db.SaveChanges();
+			}
+		}
+
+
 		public void Delete(string task)
 		{
 			using (db = new DataBaseContext())

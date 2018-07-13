@@ -4,6 +4,8 @@
 	{
 		static void Main(string[] args)
 		{
+			
+
 			TaskClass task1 = new TaskClass("FirstTask");
 			TaskClass task2 = new TaskClass("SecondTask");
 			TaskAction action = new TaskAction();

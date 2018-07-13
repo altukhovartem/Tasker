@@ -11,7 +11,7 @@ namespace Tasker
 
 		static DataBaseContext()
 		{
-			Database.SetInitializer<DataBaseContext>(new DropCreateDatabaseAlways<DataBaseContext>());
+			Database.SetInitializer<DataBaseContext>(new CustomInitializatior());
 		}
 
 		public DbSet<TaskClass> TaskSet { get; set; }
