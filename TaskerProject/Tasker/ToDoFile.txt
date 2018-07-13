@@ -1,0 +1,4 @@
+﻿1. Add Range method to add collection of tasks
+2. add Remove method to remove methods from db
+3. Add update method 
+4.
