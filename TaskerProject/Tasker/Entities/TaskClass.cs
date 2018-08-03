@@ -17,5 +17,10 @@ namespace Tasker
 		{
 			this.Title = Title;
 		}
+
+		public TaskClass()
+		{
+
+		}
 	}
 }
